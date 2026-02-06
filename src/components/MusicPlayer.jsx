@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, createContext, useContext } from 'react'
+﻿import { useState, useRef, useEffect, createContext, useContext } from 'react'
 import './MusicPlayer.css'
 
 // Create context for music control
@@ -227,4 +227,3 @@ function MusicPlayer() {
 }
 
 export default MusicPlayer
-

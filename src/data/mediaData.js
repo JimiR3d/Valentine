@@ -1,6 +1,6 @@
-// ----------------------------------------------------------------------------
+﻿// ════════════════════════════════════════════════════════════════════════════
 // VALENTINE APP - MEDIA DATA
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // 
 // YOUR FOLDER STRUCTURE:
 // - Feed images: public/media/ (root folder) - 48 images
@@ -9,11 +9,11 @@
 // - Videos: public/media/videos/ - 5 videos
 // - Audio: public/media/audio/ - 3 files (working)
 //
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // FILM REEL IMAGES (from public/media/filmreel/)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const filmReelImages = [
   "./media/filmreel/20250615_141557.jpg",
   "./media/filmreel/20250708_195444.jpg",
@@ -105,9 +105,9 @@ export const filmReelImages = [
   "./media/filmreel/Snapchat-1554873469.jpg"
 ]
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // MEMORY IMAGES (from public/media/memories/)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const memoryImages = [
   "./media/memories/20250608_114722.jpg",
   "./media/memories/20250608_114751.jpg",
@@ -299,9 +299,9 @@ export const memoryImages = [
   "./media/memories/Snapchat-1554873469.jpg"
 ]
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // VIDEOS (from public/media/videos/) - shown after every 5 photos in feed
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const allVideos = [
   "./media/videos/IMG_1028.MP4",
   "./media/videos/IMG_1029.MP4",
@@ -310,9 +310,9 @@ export const allVideos = [
   "./media/videos/video_2026-02-05_19-58-32.mp4"
 ]
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // AUDIO NOTES (from public/media/audio/) - WORKING, DO NOT CHANGE
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const audioNotes = [
   {
     id: 1,
@@ -337,30 +337,30 @@ export const audioNotes = [
   }
 ]
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // MEMORY CAPTIONS (these cycle through your memories)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 const memoryCaptions = [
-  "Forever yours ??",
-  "My favorite character ??",
-  "Mi amor ????",
-  "My Favourite???",
-  "Pancakesss ????",
-  "Picture Perfect ??",
-  "A pretty picture ????",
-  "Mi corazon ??",
-  "?????",
-  "102% ???",
-  "Always and forever??",
-  "Fah-vur ????",
-  "My princessss ????",
-  "My everything ??",
-  "The star ?"
+  "Forever yours 💕",
+  "My favorite character 💗",
+  "Mi amor 💕😊",
+  "My Favourite💛✨",
+  "Pancakesss 🤩🤩",
+  "Picture Perfect 💖",
+  "A pretty picture 🥺💖",
+  "Mi corazon 💕",
+  "💕💖✨",
+  "102% 💖✨",
+  "Always and forever💖",
+  "Fah-vur 😊❤️",
+  "My princessss 🥺💖",
+  "My everything 💕",
+  "The star ✨"
 ]
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // GENERATE MEMORIES (auto-generated from memories folder)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const generateMemories = () => {
   return memoryImages.map((src, index) => ({
     id: index + 1,
@@ -369,15 +369,15 @@ export const generateMemories = () => {
     caption: memoryCaptions[index % memoryCaptions.length]
   }))
 }
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // FEED POSTS (from public/media/ root folder)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // EDIT YOUR CAPTIONS BELOW! Find the photo and change the caption text.
 // Videos are inserted after every 5 photos.
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const generateFeedPosts = () => {
   return [
-    // ----------- PHOTO 1: 20250608_114751.jpg -----------
+    // ═══════════ PHOTO 1: 20250608_114751.jpg ═══════════
     {
       id: 1,
       author: "Jimi",
@@ -386,158 +386,158 @@ export const generateFeedPosts = () => {
       video: null,
       timestamp: "1d ago",
       likes: 220,
-      comments: [{ user: "Jimi", text: "Dunno why she's talking to the bus but I love her ??" },
-  { user: "Favour", text: "I'm a star ???" }]
+      comments: [{ user: "Jimi", text: "Dunno why she's talking to the bus but I love her 💕" },
+  { user: "Favour", text: "I'm a star ✨🤩" }]
     },
-    // ----------- PHOTO 2: 20250705_190852.jpg -----------
+    // ═══════════ PHOTO 2: 20250705_190852.jpg ═══════════
     {
       id: 2,
       author: "Favour",
       image: "./media/20250705_190852.jpg",
-      caption: "Sunset / Picture Perfect ??",
+      caption: "Sunset / Picture Perfect 🤩",
       video: null,
       timestamp: "2d ago",
       likes: 144,
-      comments: [{ user: "Favour", text: "I love this photo! ??" },
-  { user: "Jimi", text: "Shot by Annie ?" }]
+      comments: [{ user: "Favour", text: "I love this photo! 💕" },
+  { user: "Jimi", text: "Shot by Annie ✨" }]
     },
-    // ----------- PHOTO 3: 20250708_163137.jpg -----------
+    // ═══════════ PHOTO 3: 20250708_163137.jpg ═══════════
     {
       id: 3,
       author: "Jimi",
       image: "./media/20250708_163137.jpg",
-      caption: "Corpers [Shot by Annie ?]",
+      caption: "Corpers [Shot by Annie ✨]",
       video: null,
       timestamp: "3d ago",
       likes: 133,
       comments: [{ user: "NYSC", text: "No comments" },]
     },
-    // ----------- PHOTO 4: 20250713_172007.jpg -----------
+    // ═══════════ PHOTO 4: 20250713_172007.jpg ═══════════
     {
       id: 4,
       author: "Favour",
       image: "./media/20250713_172007.jpg",
-      caption: "????",
+      caption: "🤗🤗",
       video: null,
       timestamp: "4d ago",
       likes: 203,
       comments: []
     },
-    // ----------- PHOTO 5: 75629068472__E1E60A4C-5744-4466-87EC-E84F270DCDD9.jpeg -----------
+    // ═══════════ PHOTO 5: 75629068472__E1E60A4C-5744-4466-87EC-E84F270DCDD9.jpeg ═══════════
     {
       id: 5,
       author: "Jimi",
       image: "./media/75629068472__E1E60A4C-5744-4466-87EC-E84F270DCDD9.jpeg",
-      caption: "Heyy ??",
+      caption: "Heyy 🥺",
       video: null,
       timestamp: "5d ago",
       likes: 202,
       comments: []
     },
-    // ----------- VIDEO 1: IMG_1028.MP4 -----------
+    // ═══════════ VIDEO 1: IMG_1028.MP4 ═══════════
     {
       id: 6,
       author: "Jimi",
       image: null,
-      caption: "Rare footage of her sleeping ??",
+      caption: "Rare footage of her sleeping 🎥",
       video: "./media/videos/IMG_1028.MP4",
       timestamp: "6d ago",
       likes: 169,
       comments: [{ user: "Favour", text: "I wasn't sleeping" },
         { user: "Jimi", text: "My bad" }]
     },
-    // ----------- PHOTO 6: 76199149487__290BB405-BBBC-4D75-903B-0037583A5AE3.jpeg -----------
+    // ═══════════ PHOTO 6: 76199149487__290BB405-BBBC-4D75-903B-0037583A5AE3.jpeg ═══════════
     {
       id: 7,
       author: "Favour",
       image: "./media/76199149487__290BB405-BBBC-4D75-903B-0037583A5AE3.jpeg",
-      caption: "????",
+      caption: "🍰🍰",
       video: null,
       timestamp: "7d ago",
       likes: 240,
-      comments: [{ user: "Jimi", text: "My babyyy is too sexy ???????" },
-        { user: "Favour", text: "Stapp ????" }]
+      comments: [{ user: "Jimi", text: "My babyyy is too sexy 😵‍💫🥰" },
+        { user: "Favour", text: "Stapp 🤭🫢" }]
     },
-    // ----------- PHOTO 7: 76234298623__AD100269-15DA-4E3C-B670-2AAF7506363E.jpeg -----------
+    // ═══════════ PHOTO 7: 76234298623__AD100269-15DA-4E3C-B670-2AAF7506363E.jpeg ═══════════
     {
       id: 8,
       author: "Jimi",
       image: "./media/76234298623__AD100269-15DA-4E3C-B670-2AAF7506363E.jpeg",
-      caption: "????",
+      caption: "🥰🥰",
       video: null,
       timestamp: "8d ago",
       likes: 197,
       comments: []
     },
-    // ----------- PHOTO 8: 77197057240__58BB2831-9F48-4CA7-9ED1-D6A375358446.jpeg -----------
+    // ═══════════ PHOTO 8: 77197057240__58BB2831-9F48-4CA7-9ED1-D6A375358446.jpeg ═══════════
     {
       id: 9,
       author: "Favour",
       image: "./media/77197057240__58BB2831-9F48-4CA7-9ED1-D6A375358446.jpeg",
-      caption: "Shortbread Merchant ??",
+      caption: "Shortbread Merchant 🫵",
       video: null,
       timestamp: "9d ago",
       likes: 233,
-      comments: [{ user: "Favour", text: "My babyyy got it for me ??" },
-        { user: "Jimi", text: "Awwwn cuties??" }]
+      comments: [{ user: "Favour", text: "My babyyy got it for me 🥺" },
+        { user: "Jimi", text: "Awwwn cuties🥺" }]
     },
-    // ----------- PHOTO 9: IMG_0117.JPEG -----------
+    // ═══════════ PHOTO 9: IMG_0117.JPEG ═══════════
     {
       id: 10,
       author: "Jimi",
       image: "./media/IMG_0117.JPEG",
-      caption: "Bro is lost in thoughts ????",
+      caption: "Bro is lost in thoughts 🤔💭",
       video: null,
       timestamp: "10d ago",
       likes: 124,
       comments: []
     },
-    // ----------- PHOTO 10: IMG_0301.jpg -----------
+    // ═══════════ PHOTO 10: IMG_0301.jpg ═══════════
     {
       id: 11,
       author: "Favour",
       image: "./media/IMG_0301.jpg",
-      caption: "First hangout with digital evidence ??",
+      caption: "First hangout with digital evidence 📸",
       video: null,
       timestamp: "11d ago",
       likes: 238,
       comments: [{ user: "Jimi", text: "We were coming for CUCRID!!" },
-        { user: "Favour", text: "Yhhhhh ??" }]
+        { user: "Favour", text: "Yhhhhh 🤭" }]
     },
-    // ----------- VIDEO 2: IMG_1029.MP4 -----------
+    // ═══════════ VIDEO 2: IMG_1029.MP4 ═══════════
     {
       id: 12,
       author: "Favour",
       image: null,
-      caption: "How am I the one posting this ????",
+      caption: "How am I the one posting this 😭🎥",
       video: "./media/videos/IMG_1029.MP4",
       timestamp: "12d ago",
       likes: 208,
       comments: [{ user: "Jimi", text: "She isn't sleeping btw" }]
     },
-    // ----------- PHOTO 11: IMG_0579.JPG -----------
+    // ═══════════ PHOTO 11: IMG_0579.JPG ═══════════
     {
       id: 13,
       author: "Jimi",
       image: "./media/IMG_0579.JPG",
-      caption: "Fantastic Four [Shot by Annie ?]",
+      caption: "Fantastic Four [Shot by Annie ✨]",
       video: null,
       timestamp: "13d ago",
       likes: 168,
       comments: []
     },
-    // ----------- PHOTO 12: IMG_0856.JPEG -----------
+    // ═══════════ PHOTO 12: IMG_0856.JPEG ═══════════
     {
       id: 14,
       author: "Favour",
       image: "./media/IMG_0856.JPEG",
-      caption: "????",
+      caption: "🥰🥰",
       video: null,
       timestamp: "14d ago",
       likes: 150,
       comments: [{ user: "Jimi", text: "Ouuu, cool pic" }]
     },
-    // ----------- PHOTO 13: IMG_0879.JPEG -----------
+    // ═══════════ PHOTO 13: IMG_0879.JPEG ═══════════
     {
       id: 15,
       author: "Jimi",
@@ -548,7 +548,7 @@ export const generateFeedPosts = () => {
       likes: 177,
       comments: []
     },
-    // ----------- PHOTO 14: IMG_0894.JPEG -----------
+    // ═══════════ PHOTO 14: IMG_0894.JPEG ═══════════
     {
       id: 16,
       author: "Favour",
@@ -557,10 +557,10 @@ export const generateFeedPosts = () => {
       video: null,
       timestamp: "16d ago",
       likes: 107,
-      comments: [{ user: "Jimi", text: "Who took the rest of the picture ????" },
-        { user: "Favour", text: "????" }]
+      comments: [{ user: "Jimi", text: "Who took the rest of the picture 😭😭" },
+        { user: "Favour", text: "😭😭" }]
     },
-    // ----------- PHOTO 15: IMG_0896.JPEG -----------
+    // ═══════════ PHOTO 15: IMG_0896.JPEG ═══════════
     {
       id: 17,
       author: "Jimi",
@@ -569,31 +569,31 @@ export const generateFeedPosts = () => {
       video: null,
       timestamp: "17d ago",
       likes: 247,
-      comments: [{ user: "Favour", text: "????" }]
+      comments: [{ user: "Favour", text: "🫣🫣" }]
     },
-    // ----------- VIDEO 3: IMG_1408.MP4 -----------
+    // ═══════════ VIDEO 3: IMG_1408.MP4 ═══════════
     {
       id: 18,
       author: "Jimi",
       image: null,
-      caption: "Almost feels like after every 5 picture, we see her not sleeping ????",
+      caption: "Almost feels like after every 5 picture, we see her not sleeping 🤔🎥",
       video: "./media/videos/IMG_1408.MP4",
       timestamp: "18d ago",
       likes: 214,
-      comments: [{ user: "Favour", text: "I wasn't sleeping ??" }]
+      comments: [{ user: "Favour", text: "I wasn't sleeping 😐" }]
     },
-    // ----------- PHOTO 16: IMG_0920.jpg -----------
+    // ═══════════ PHOTO 16: IMG_0920.jpg ═══════════
     {
       id: 19,
       author: "Favour",
       image: "./media/IMG_0920.jpg",
-      caption: "Omgggg ????",
+      caption: "Omgggg 😳😳",
       video: null,
       timestamp: "19d ago",
       likes: 248,
       comments: [{ user: "Jimi", text: "Can I get your number tho?" }]
     },
-    // ----------- PHOTO 17: IMG_1295.JPEG -----------
+    // ═══════════ PHOTO 17: IMG_1295.JPEG ═══════════
     {
       id: 20,
       author: "Jimi",
@@ -604,29 +604,29 @@ export const generateFeedPosts = () => {
       likes: 145,
       comments: []
     },
-    // ----------- PHOTO 18: IMG_1721.JPEG -----------
+    // ═══════════ PHOTO 18: IMG_1721.JPEG ═══════════
     {
       id: 21,
       author: "Favour",
       image: "./media/IMG_1721.JPEG",
-      caption: "Guess the occasion, He's dressed for ??",
+      caption: "Guess the occasion, He's dressed for 🤭",
       video: null,
       timestamp: "21d ago",
       likes: 178,
-      comments: [{ user: "Jimi", text: "??????" }]
+      comments: [{ user: "Jimi", text: "👁️👁️" }]
     },
-    // ----------- PHOTO 19: IMG_1725.JPEG -----------
+    // ═══════════ PHOTO 19: IMG_1725.JPEG ═══════════
     {
       id: 22,
       author: "Jimi",
       image: "./media/IMG_1725.JPEG",
-      caption: "Guess the occasion, She's dressed for ??",
+      caption: "Guess the occasion, She's dressed for 🤭",
       video: null,
       timestamp: "22d ago",
       likes: 107,
-      comments: [{ user: "Favour", text: "??????" }]
+      comments: [{ user: "Favour", text: "👁️👁️" }]
     },
-    // ----------- PHOTO 20: IMG_1820.PNG -----------
+    // ═══════════ PHOTO 20: IMG_1820.PNG ═══════════
     {
       id: 23,
       author: "Favour",
@@ -637,43 +637,43 @@ export const generateFeedPosts = () => {
       likes: 102,
       comments: []
     },
-    // ----------- VIDEO 4: video_2026-02-05_19-58-18.mp4 -----------
+    // ═══════════ VIDEO 4: video_2026-02-05_19-58-18.mp4 ═══════════
     {
       id: 24,
       author: "Favour",
       image: null,
-      caption: "Woahhh, you're right, it's after every 5 pictures ??",
+      caption: "Woahhh, you're right, it's after every 5 pictures 🎥",
       video: "./media/videos/video_2026-02-05_19-58-18.mp4",
       timestamp: "24d ago",
       likes: 174,
       comments: [{ user: "Jimi", text: "Hmmm" }, 
       { user: "Seyi", text: "Guy Shut up" },
       { user: "Jimi", text: "Bro is not breaking the fourth wall" },
-      { user: "Favour", text: "I wasn't sleeping ??" }]
+      { user: "Favour", text: "I wasn't sleeping 😐" }]
     },
-    // ----------- PHOTO 21: IMG_1836.JPEG -----------
+    // ═══════════ PHOTO 21: IMG_1836.JPEG ═══════════
     {
       id: 25,
       author: "Jimi",
       image: "./media/IMG_1836.JPEG",
-      caption: "????",
+      caption: "❤️💖",
       video: null,
       timestamp: "25d ago",
       likes: 124,
       comments: [{ user: "Favour", text: "Cutiesss" }]
     },
-    // ----------- PHOTO 22: IMG_2182.JPEG -----------
+    // ═══════════ PHOTO 22: IMG_2182.JPEG ═══════════
     {
       id: 26,
       author: "Favour",
       image: "./media/IMG_2182.JPEG",
-      caption: "Furniture Shopping ???",
+      caption: "Furniture Shopping 🛍️",
       video: null,
       timestamp: "26d ago",
       likes: 243,
       comments: []
     },
-    // ----------- PHOTO 23: IMG_2195.JPEG -----------
+    // ═══════════ PHOTO 23: IMG_2195.JPEG ═══════════
     {
       id: 27,
       author: "Jimi",
@@ -686,154 +686,154 @@ export const generateFeedPosts = () => {
         {user: "Jimi", text: "Good question"}
       ]
     },
-    // ----------- PHOTO 24: IMG_2199.JPEG -----------
+    // ═══════════ PHOTO 24: IMG_2199.JPEG ═══════════
     {
       id: 28,
       author: "Favour",
       image: "./media/IMG_2199.JPEG",
-      caption: "I love this picture????",
+      caption: "I love this picture🥺💖",
       video: null,
       timestamp: "28d ago",
       likes: 144,
-      comments: [{user: "Jimi", text: "Me too baby ????"}]
+      comments: [{user: "Jimi", text: "Me too baby 💖💖"}]
     },
-    // ----------- PHOTO 25: IMG_2470.JPG -----------
+    // ═══════════ PHOTO 25: IMG_2470.JPG ═══════════
     {
       id: 29,
       author: "Jimi",
       image: "./media/IMG_2470.JPG",
-      caption: "The Starrr???",
+      caption: "The Starrr🤩✨",
       video: null,
       timestamp: "29d ago",
       likes: 176,
       comments: []
     },
-    // ----------- VIDEO 5: video_2026-02-05_19-58-32.mp4 -----------
+    // ═══════════ VIDEO 5: video_2026-02-05_19-58-32.mp4 ═══════════
     {
       id: 30,
       author: "Jimi",
       image: null,
-      caption: "Woahh, there's more ??",
+      caption: "Woahh, there's more 🎥",
       video: "./media/videos/video_2026-02-05_19-58-32.mp4",
       timestamp: "30d ago",
       likes: 272,
-      comments: [{user: "Jimi", text: "After 5 pictures as usual ????"},
-        {user: "Favour", text: "I might have been sleeping??"}]
+      comments: [{user: "Jimi", text: "After 5 pictures as usual 🤔🤔"},
+        {user: "Favour", text: "I might have been sleeping😐"}]
     },
-    // ----------- PHOTO 26: IMG_2739.JPEG -----------
+    // ═══════════ PHOTO 26: IMG_2739.JPEG ═══════════
     {
       id: 31,
       author: "Favour",
       image: "./media/IMG_2739.JPEG",
-      caption: "My baby ????",
+      caption: "My baby 🥺💖",
       video: null,
       timestamp: "31d ago",
       likes: 237,
-      comments: [{user: "Jimi", text: "Hey Love ??"}]
+      comments: [{user: "Jimi", text: "Hey Love 💖"}]
     },
-    // ----------- PHOTO 27: IMG_2761.JPG -----------
+    // ═══════════ PHOTO 27: IMG_2761.JPG ═══════════
     {
       id: 32,
       author: "Jimi",
       image: "./media/IMG_2761.JPG",
-      caption: "????",
+      caption: "🥰🥰",
       video: null,
       timestamp: "32d ago",
       likes: 115,
       comments: []
     },
-    // ----------- PHOTO 28: IMG_2877.PNG -----------
+    // ═══════════ PHOTO 28: IMG_2877.PNG ═══════════
     {
       id: 33,
       author: "Favour",
       image: "./media/IMG_2877.PNG",
-      caption: "I'm tired ??",
+      caption: "I'm tired 😴",
       video: null,
       timestamp: "33d ago",
       likes: 232,
       comments: [{user: "Jimi", text: "Sorry babe, you've been up all night doing assignment "},
-        {user: "Favour", text: "Mehn, This call has been on for 12 hours ??"}]
+        {user: "Favour", text: "Mehn, This call has been on for 12 hours 😭"}]
     },
-    // ----------- PHOTO 29: IMG_2882.PNG -----------
+    // ═══════════ PHOTO 29: IMG_2882.PNG ═══════════
     {
       id: 34,
       author: "Jimi",
       image: "./media/IMG_2882.PNG",
-      caption: "Photographer ????",
+      caption: "Photographer 🤩📸",
       video: null,
       timestamp: "34d ago",
       likes: 202,
       comments: []
     },
-    // ----------- PHOTO 30: IMG_2926.jpg -----------
+    // ═══════════ PHOTO 30: IMG_2926.jpg ═══════════
     {
       id: 35,
       author: "Favour",
       image: "./media/IMG_2926.jpg",
-      caption: "Sun kissed ???",
+      caption: "Sun kissed ☀️✨",
       video: null,
       timestamp: "35d ago",
       likes: 224,
-      comments: [{user: "Jimi", text: "Looking good babe ??"},
-        {user: "Seyi", text: "Hace, not in my comments ??"}]
+      comments: [{user: "Jimi", text: "Looking good babe 💖"},
+        {user: "Seyi", text: "Hace, not in my comments 😐"}]
     },
-    // ----------- PHOTO 31: IMG_2974.PNG -----------
+    // ═══════════ PHOTO 31: IMG_2974.PNG ═══════════
     {
       id: 36,
       author: "Jimi",
       image: "./media/IMG_2974.PNG",
-      caption: "Best in Photography ??",
+      caption: "Best in Photography 📸",
       video: null,
       timestamp: "36d ago",
       likes: 170,
-      comments: [{user: "Favour", text: "Thanks love ??"}]
+      comments: [{user: "Favour", text: "Thanks love 🥺"}]
     },
-    // ----------- PHOTO 32: IMG_3940.PNG -----------
+    // ═══════════ PHOTO 32: IMG_3940.PNG ═══════════
     {
       id: 37,
       author: "Favour",
       image: "./media/IMG_3940.PNG",
-      caption: "Not sleeping ??",
+      caption: "Not sleeping 😐",
       video: null,
       timestamp: "37d ago",
       likes: 226,
-      comments: [{user: "Jimi", text: "I can see that ??"},
-        {user: "Seyi", text: "Definitely not ??"}]
+      comments: [{user: "Jimi", text: "I can see that 😐"},
+        {user: "Seyi", text: "Definitely not 😐"}]
     },
-    // ----------- PHOTO 33: IMG_3979.JPG -----------
+    // ═══════════ PHOTO 33: IMG_3979.JPG ═══════════
     {
       id: 38,
       author: "Jimi",
       image: "./media/IMG_3979.JPG",
-      caption: "Thanks for the birthday love ????",
+      caption: "Thanks for the birthday love 🥺💖",
       video: null,
       timestamp: "38d ago",
       likes: 114,
-      comments: [{user: "Favour", text: "You're welcome love ??"}]
+      comments: [{user: "Favour", text: "You're welcome love 💖"}]
     },
-    // ----------- PHOTO 34: IMG_4121.JPEG -----------
+    // ═══════════ PHOTO 34: IMG_4121.JPEG ═══════════
     {
       id: 39,
       author: "Favour",
       image: "./media/IMG_4121.JPEG",
-      caption: "????",
+      caption: "🥰🥰",
       video: null,
       timestamp: "39d ago",
       likes: 241,
-      comments: [{user: "Jimi", text: "My baby ????"}]
+      comments: [{user: "Jimi", text: "My baby 🥺💖"}]
     },
-    // ----------- PHOTO 35: IMG_4122.JPEG -----------
+    // ═══════════ PHOTO 35: IMG_4122.JPEG ═══════════
     {
       id: 40,
       author: "Jimi",
       image: "./media/IMG_4122.JPEG",
-      caption: "She's laughing at my jokes ??",
+      caption: "She's laughing at my jokes 🫣",
       video: null,
       timestamp: "40d ago",
       likes: 120,
       comments: []
     },
-    // ----------- PHOTO 36: IMG_4893.JPEG -----------
+    // ═══════════ PHOTO 36: IMG_4893.JPEG ═══════════
     {
       id: 41,
       author: "Favour",
@@ -842,9 +842,9 @@ export const generateFeedPosts = () => {
       video: null,
       timestamp: "41d ago",
       likes: 137,
-      comments: [{user: "Jimi", text: "Yo, Monitor's pretty cool ??"}]
+      comments: [{user: "Jimi", text: "Yo, Monitor's pretty cool 💻"}]
     },
-    // ----------- PHOTO 37: lp_image-32.JPEG -----------
+    // ═══════════ PHOTO 37: lp_image-32.JPEG ═══════════
     {
       id: 42,
       author: "Jimi",
@@ -855,29 +855,29 @@ export const generateFeedPosts = () => {
       likes: 128,
       comments: [{user: "Favour", text: "Mtcheww"}]
     },
-    // ----------- PHOTO 38: lp_image-34.JPEG -----------
+    // ═══════════ PHOTO 38: lp_image-34.JPEG ═══════════
     {
       id: 43,
       author: "Favour",
       image: "./media/lp_image-34.JPEG",
-      caption: "????",
+      caption: "💕💕",
       video: null,
       timestamp: "43d ago",
       likes: 123,
-      comments: [{user: "Jimi", text: "????"}]
+      comments: [{user: "Jimi", text: "🥺💖"}]
     },
-    // ----------- PHOTO 39: lp_image-49.JPEG -----------
+    // ═══════════ PHOTO 39: lp_image-49.JPEG ═══════════
     {
       id: 44,
       author: "Jimi",
       image: "./media/lp_image-49.JPEG",
-      caption: "Omg, our necklaceee ????",
+      caption: "Omg, our necklaceee 🥺💖",
       video: null,
       timestamp: "44d ago",
       likes: 247,
-      comments: [{user: "Favour", text: "I love it ????"}]
+      comments: [{user: "Favour", text: "I love it 🥺💖"}]
     },
-    // ----------- PHOTO 40: lp_image-55.JPEG -----------
+    // ═══════════ PHOTO 40: lp_image-55.JPEG ═══════════
     {
       id: 45,
       author: "Favour",
@@ -886,95 +886,95 @@ export const generateFeedPosts = () => {
       video: null,
       timestamp: "45d ago",
       likes: 236,
-      comments: [{user: "Jimi", text: "My baby is eating ????"}]
+      comments: [{user: "Jimi", text: "My baby is eating 🥺💖"}]
     },
-    // ----------- PHOTO 41: lp_image-67.JPEG -----------
+    // ═══════════ PHOTO 41: lp_image-67.JPEG ═══════════
     {
       id: 46,
       author: "Jimi",
       image: "./media/lp_image-67.JPEG",
-      caption: "Styling my baby ????",
+      caption: "Styling my baby 🥺💖",
       video: null,
       timestamp: "46d ago",
       likes: 142,
-      comments: [{user: "Favour", text: "Thanks love ????"},
-        {user: "Favour", text: "Best in dressing ?????"}
+      comments: [{user: "Favour", text: "Thanks love 🥺💖"},
+        {user: "Favour", text: "Best in dressing 🤩🤩✨"}
       ]
     },
-    // ----------- PHOTO 42: lp_image-74.JPEG -----------
+    // ═══════════ PHOTO 42: lp_image-74.JPEG ═══════════
     {
       id: 47,
       author: "Favour",
       image: "./media/lp_image-74.JPEG",
-      caption: "????",
+      caption: "😊😊",
       video: null,
       timestamp: "47d ago",
       likes: 112,
-      comments: [{user: "Jimi", text: "Muahh ??"}]
+      comments: [{user: "Jimi", text: "Muahh 💖"}]
     },
-    // ----------- PHOTO 43: lp_image-81.JPEG -----------
+    // ═══════════ PHOTO 43: lp_image-81.JPEG ═══════════
     {
       id: 48,
       author: "Jimi",
       image: "./media/lp_image-81.JPEG",
-      caption: "Cameraaaa ??",
+      caption: "Cameraaaa 📸",
       video: null,
       timestamp: "48d ago",
       likes: 234,
       comments: []
     },
-    // ----------- PHOTO 44: lp_image-83.JPEG -----------
+    // ═══════════ PHOTO 44: lp_image-83.JPEG ═══════════
     {
       id: 49,
       author: "Favour",
       image: "./media/lp_image-83.JPEG",
-      caption: "My tiara isn't showing ????",
+      caption: "My tiara isn't showing 😭😭",
       video: null,
       timestamp: "49d ago",
       likes: 173,
-      comments: [{user: "Jimi", text: "It's showing Princess ????"},
-        {user: "Jimi", text: "You're still my princess everyday??"}
+      comments: [{user: "Jimi", text: "It's showing Princess 🥺💖"},
+        {user: "Jimi", text: "You're still my princess everyday💖"}
       ]
     },
-    // ----------- PHOTO 45: lp_image-87.JPEG -----------
+    // ═══════════ PHOTO 45: lp_image-87.JPEG ═══════════
     {
       id: 50,
       author: "Jimi",
       image: "./media/lp_image-87.JPEG",
-      caption: "??",
+      caption: "✌️",
       video: null,
       timestamp: "50d ago",
       likes: 137,
       comments: []
     },
-    // ----------- PHOTO 46: lp_image-89.JPEG -----------
+    // ═══════════ PHOTO 46: lp_image-89.JPEG ═══════════
     {
       id: 51,
       author: "Favour",
       image: "./media/lp_image-89.JPEG",
-      caption: "My crownnnn ??",
+      caption: "My crownnnn 👑",
       video: null,
       timestamp: "51d ago",
       likes: 141,
-      comments: [{user: "Jimi", text: "My Queen ??????"}]
+      comments: [{user: "Jimi", text: "My Queen 🙇🏾💖"}]
     },
-    // ----------- PHOTO 47: Snapchat-1284124136.jpg -----------
+    // ═══════════ PHOTO 47: Snapchat-1284124136.jpg ═══════════
     {
       id: 52,
       author: "Jimi",
       image: "./media/Snapchat-1284124136.jpg",
-      caption: "Her eyes ??",
+      caption: "Her eyes ✨✨",
       video: null,
       timestamp: "52d ago",
       likes: 210,
       comments: []
     },
-    // ----------- PHOTO 48: Snapchat-1554873469.jpg -----------
+    // ═══════════ PHOTO 48: Snapchat-1554873469.jpg ═══════════
     {
       id: 53,
       author: "Favour",
       image: "./media/Snapchat-1554873469.jpg",
-      caption: "His eyes ????",
+      caption: "His eyes 🥰🥰",
       video: null,
       timestamp: "53d ago",
       likes: 201,
@@ -983,9 +983,9 @@ export const generateFeedPosts = () => {
   ]
 }
 
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 // REASONS TO LOVE (for Reasons page)
-// ----------------------------------------------------------------------------
+// ════════════════════════════════════════════════════════════════════════════
 export const reasonsToLove = [
   { id: 1, title: "Your smile lights up my world", description: "Every time you smile, everything feels right." },
   { id: 2, title: "Your kindness knows no bounds", description: "The way you care for others shows your beautiful soul." },
@@ -998,4 +998,3 @@ export const reasonsToLove = [
   { id: 9, title: "You believe in us", description: "Your faith in our love gives me courage." },
   { id: 10, title: "You're my best friend and soulmate", description: "Finding love is rare. Finding your best friend in that love? That's us." }
 ]
-
