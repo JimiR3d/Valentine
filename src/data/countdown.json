@@ -1,0 +1,72 @@
+[
+  {
+    "day": 1,
+    "date": "2026-02-04",
+    "title": "Day 1 💕",
+    "content": "The beginning of something special... 10 days until Valentine's! Every day I'll have something new for you here.",
+    "type": "note"
+  },
+  {
+    "day": 2,
+    "date": "2026-02-05",
+    "title": "Day 2 ✨",
+    "content": "Add your message for Day 2 here...",
+    "type": "note"
+  },
+  {
+    "day": 3,
+    "date": "2026-02-06",
+    "title": "Day 3 🌹",
+    "content": "Add your message for Day 3 here...",
+    "type": "note"
+  },
+  {
+    "day": 4,
+    "date": "2026-02-07",
+    "title": "Day 4 💖",
+    "content": "Add your message for Day 4 here...",
+    "type": "note"
+  },
+  {
+    "day": 5,
+    "date": "2026-02-08",
+    "title": "Day 5 🎀",
+    "content": "Halfway there! Add your message for Day 5 here...",
+    "type": "note"
+  },
+  {
+    "day": 6,
+    "date": "2026-02-09",
+    "title": "Day 6 💝",
+    "content": "Add your message for Day 6 here...",
+    "type": "note"
+  },
+  {
+    "day": 7,
+    "date": "2026-02-10",
+    "title": "Day 7 🌸",
+    "content": "Add your message for Day 7 here...",
+    "type": "note"
+  },
+  {
+    "day": 8,
+    "date": "2026-02-11",
+    "title": "Day 8 💫",
+    "content": "Almost there! Add your message for Day 8 here...",
+    "type": "note"
+  },
+  {
+    "day": 9,
+    "date": "2026-02-12",
+    "title": "Day 9 🥰",
+    "content": "Just one more day! Add your message for Day 9 here...",
+    "type": "note"
+  },
+  {
+    "day": 10,
+    "date": "2026-02-14",
+    "title": "Valentine's Day! 💘",
+    "content": "Happy Valentine's Day, my love! You made it through all 10 days. Now go to the special page... 💕",
+    "type": "special"
+  }
+]

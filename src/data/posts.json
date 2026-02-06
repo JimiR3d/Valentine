@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "author": "Jimi",
+    "content": "Hey sweetie get some sleep now, I love you❤️ (I miss you and probably need a hug)",
+    "timestamp": "Late night thoughts",
+    "likes": 999,
+    "comments": [
+      { "user": "Favour", "text": "I miss you too 🥹💕" }
+    ]
+  },
+  {
+    "id": 2,
+    "author": "Favour",
+    "content": "I miss you 😔❤️✨",
+    "timestamp": "When we're apart",
+    "likes": 888,
+    "comments": [
+      { "user": "Jimi", "text": "I miss you more ❤️" }
+    ]
+  },
+  {
+    "id": 3,
+    "author": "your_favorite_person",
+    "content": "Do you remember this day? We laughed until we couldn't breathe because I dropped the ice cream. 🍦",
+    "image": "https://picsum.photos/id/1011/600/400",
+    "timestamp": "2 hours ago",
+    "likes": 124,
+    "comments": [
+      { "user": "bestie_1", "text": "You two are goals! 😍" },
+      { "user": "mom", "text": "So cute!" }
+    ]
+  },
+  {
+    "id": 4,
+    "author": "Jimi",
+    "content": "Goodnight pumpkin 🥰💖",
+    "timestamp": "Every night",
+    "likes": 567,
+    "comments": [
+      { "user": "Favour", "text": "Goodnight baby 💖💝" }
+    ]
+  },
+  {
+    "id": 5,
+    "author": "your_favorite_person",
+    "content": "Just thinking about how you make my worst days softer. Thank you for being my peace. 💕",
+    "timestamp": "Yesterday",
+    "likes": 89,
+    "comments": []
+  },
+  {
+    "id": 6,
+    "author": "your_favorite_person",
+    "content": "Future plan: One day we will argue about paint colors for our house. I vote for Sage Green. 🌿",
+    "image": "https://picsum.photos/id/1016/600/400",
+    "timestamp": "Last week",
+    "likes": 245,
+    "comments": [
+      { "user": "you", "text": "Definitely going with Navy Blue." }
+    ]
+  },
+  {
+    "id": 7,
+    "author": "Favour",
+    "content": "You should go to bed, aren't you sleepy?",
+    "timestamp": "Late night chats",
+    "likes": 432,
+    "comments": [
+      { "user": "Jimi", "text": "You'll be fine? 🥹" }
+    ]
+  },
+  {
+    "id": 8,
+    "author": "your_favorite_person",
+    "content": "I still get butterflies every time you walk into the room. It's embarrassing, actually. 🦋",
+    "timestamp": "2 weeks ago",
+    "likes": 167,
+    "comments": []
+  },
+  {
+    "id": 9,
+    "author": "your_favorite_person",
+    "content": "That late-night drive we took when we couldn't sleep was one of my favorite memories. The city lights, the music, just us. ✨",
+    "image": "https://picsum.photos/id/1035/600/400",
+    "timestamp": "3 weeks ago",
+    "likes": 312,
+    "comments": [
+      { "user": "lover_of_music", "text": "The playlist was perfect!" }
+    ]
+  }
+]

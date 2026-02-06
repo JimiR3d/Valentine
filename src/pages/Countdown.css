@@ -1,0 +1,334 @@
+.countdown-page {
+  min-height: 100vh;
+  padding: 32px 16px 100px;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.countdown-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.countdown-header {
+  text-align: center;
+  margin-bottom: 32px;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.countdown-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #F43F5E 0%, #EC4899 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 2px 4px rgba(244, 63, 94, 0.2));
+}
+
+/* Big Counter */
+.big-counter {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 48px;
+  padding: 40px 60px;
+  box-shadow: 0 20px 60px rgba(244, 63, 94, 0.15);
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.big-counter:hover {
+  transform: scale(1.05);
+}
+
+.counter-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FDA4AF 0%, #F472B6 50%, #FCD34D 100%);
+}
+
+.counter-glow {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.counter-glow-1 {
+  top: -40px;
+  right: -40px;
+  width: 160px;
+  height: 160px;
+  background: #FEE2E2;
+}
+
+.counter-glow-2 {
+  bottom: -40px;
+  left: -40px;
+  width: 128px;
+  height: 128px;
+  background: #FEF3C7;
+}
+
+.counter-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-number {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, #F43F5E 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 4px 8px rgba(244, 63, 94, 0.3));
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.counter-label {
+  color: #9CA3AF;
+  font-weight: 700;
+  margin-top: 8px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* Day Grid */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.day-card {
+  aspect-ratio: 1;
+  border-radius: 40px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.day-card:nth-child(1) { animation-delay: 0.1s; }
+.day-card:nth-child(2) { animation-delay: 0.15s; }
+.day-card:nth-child(3) { animation-delay: 0.2s; }
+.day-card:nth-child(4) { animation-delay: 0.25s; }
+.day-card:nth-child(5) { animation-delay: 0.3s; }
+.day-card:nth-child(6) { animation-delay: 0.35s; }
+.day-card:nth-child(7) { animation-delay: 0.4s; }
+.day-card:nth-child(8) { animation-delay: 0.45s; }
+.day-card:nth-child(9) { animation-delay: 0.5s; }
+.day-card:nth-child(10) { animation-delay: 0.55s; }
+
+.day-card.unlocked {
+  background: white;
+  border: 2px solid #FECDD3;
+  color: #F43F5E;
+  box-shadow: 0 10px 30px rgba(244, 63, 94, 0.2);
+}
+
+.day-card.unlocked:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 20px 40px rgba(244, 63, 94, 0.3);
+}
+
+.day-card.locked {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid white;
+  color: #D1D5DB;
+}
+
+.day-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.day-card.unlocked .day-number {
+  color: #F43F5E;
+}
+
+.day-card.locked .day-number {
+  color: #E5E7EB;
+}
+
+.day-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.gift-icon {
+  width: 24px;
+  height: 24px;
+  color: #F43F5E;
+  animation: bounce 1s ease-in-out infinite;
+  margin-bottom: 4px;
+}
+
+.lock-icon {
+  width: 16px;
+  height: 16px;
+  color: #D1D5DB;
+  margin-bottom: 4px;
+}
+
+.day-status {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 32px;
+  max-width: 360px;
+  width: 100%;
+  overflow: hidden;
+  animation: scaleIn 0.3s ease-out;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #F43F5E 0%, #F59E0B 100%);
+}
+
+.modal-day {
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.modal-body {
+  padding: 24px;
+  text-align: center;
+}
+
+.modal-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: #1F2937;
+  margin-bottom: 12px;
+}
+
+.modal-body p {
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+.modal-emoji {
+  display: block;
+  font-size: 3rem;
+  margin-top: 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

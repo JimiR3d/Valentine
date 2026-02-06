@@ -1,0 +1,153 @@
+.accepted-page {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, #FFF1F2 0%, #FECDD3 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Floating Hearts */
+.hearts-explosion {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-heart {
+  position: absolute;
+  opacity: 0;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(0deg);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20vh) rotate(360deg);
+  }
+}
+
+/* Content */
+.accepted-content {
+  z-index: 10;
+  position: relative;
+  padding: 24px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Celebration Emojis */
+.celebration-emojis {
+  font-size: 4rem;
+  margin-bottom: 32px;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Title */
+.accepted-title {
+  font-family: 'Caveat', 'Quicksand', cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #F43F5E;
+  margin-bottom: 32px;
+  text-shadow: 0 4px 12px rgba(244, 63, 94, 0.2);
+  animation: scaleIn 0.6s ease-out;
+}
+
+@media (min-width: 768px) {
+  .accepted-title {
+    font-size: 7rem;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Subtitle */
+.accepted-subtitle {
+  color: #4B5563;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 48px;
+  animation: fadeIn 0.8s ease-out 0.3s backwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.choice-badge {
+  display: inline-block;
+  margin-top: 16px;
+  background: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  color: #F43F5E;
+  font-weight: 700;
+  transform: rotate(-2deg);
+  border: 1px solid #FECDD3;
+}
+
+/* Valentine Card */
+.valentine-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 40px;
+  border-radius: 48px;
+  box-shadow: 0 24px 64px rgba(244, 63, 94, 0.15);
+  border: 1px solid white;
+  max-width: 480px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.valentine-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-message {
+  font-family: 'Caveat', 'Quicksand', cursive;
+  font-size: 2rem;
+  color: #F43F5E;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.card-thank {
+  color: #6B7280;
+  font-weight: 700;
+  font-size: 1.125rem;
+}

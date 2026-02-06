@@ -1,0 +1,114 @@
+.playlist-page {
+  min-height: 100vh;
+  padding: 100px 16px 60px;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.playlist-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.playlist-header {
+  text-align: center;
+  margin-bottom: 32px;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.playlist-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.title-emoji {
+  font-size: 2.5rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.title-text {
+  background: linear-gradient(135deg, #1DB954 0%, #FFD700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.playlist-subtitle {
+  color: #6B7280;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Spotify Embed */
+.spotify-embed {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(29, 185, 84, 0.2);
+  border: 2px solid rgba(29, 185, 84, 0.2);
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+.spotify-embed iframe {
+  display: block;
+  border-radius: 22px;
+}
+
+/* Note */
+.playlist-note {
+  margin-top: 32px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  border: 1px solid rgba(254, 205, 211, 0.5);
+  animation: fadeInUp 0.6s ease-out 0.4s backwards;
+}
+
+.note-emoji {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.playlist-note p {
+  color: #4B5563;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
