@@ -16,25 +16,25 @@ const lofiPlaylist = [
     id: 2, 
     title: "Good Night", 
     artist: "Fassounds", 
-    url: "/Music/fassounds-good-night-lofi-cozy-chill-music-160166.mp3" 
+    url: "./Music/fassounds-good-night-lofi-cozy-chill-music-160166.mp3" 
   },
   { 
     id: 3, 
     title: "Blizzard", 
     artist: "Fassounds", 
-    url: "/Music/fassounds-blizzard-179280.mp3" 
+    url: "./Music/fassounds-blizzard-179280.mp3" 
   },
   { 
     id: 4, 
     title: "Urban Chill", 
     artist: "Aventure", 
-    url: "/Music/aventure-urban-lofi-chill-music-478919.mp3" 
+    url: "./Music/aventure-urban-lofi-chill-music-478919.mp3" 
   },
   { 
     id: 5, 
     title: "Sentimental Love", 
     artist: "Sonican", 
-    url: "/Music/sonican-lo-fi-music-loop-sentimental-jazzy-love-473154.mp3" 
+    url: "./Music/sonican-lo-fi-music-loop-sentimental-jazzy-love-473154.mp3" 
   },
 
 ]
@@ -227,3 +227,4 @@ function MusicPlayer() {
 }
 
 export default MusicPlayer
+
